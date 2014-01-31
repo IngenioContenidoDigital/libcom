@@ -1,0 +1,1819 @@
+html, body{
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin: 0 0; 
+    padding: 0 0;
+}
+
+a img {border: none; }
+img {border: none; }
+
+@font-face{ font-family: ShePaintsMeBlue; src: url('../fonts/ShePaintsMeBlue.ttf'), url('../fonts/ShePaintsMeBlue.eot') format("opentype");}
+
+#myGallery{
+	position:relative;
+	width:400px; /* Set your image width */
+	height:300px; /* Set your image height */
+}
+
+#myGallery img{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#last-page{
+    float: left;
+}
+
+#last-page:hover{
+    cursor: pointer;
+}
+
+#next-page{
+    float: right;
+}
+
+#next-page:hover{
+    cursor: pointer;
+}
+
+#myGallery img.active{
+	display:block;
+}
+
+.confirma-elimina{
+    font-family: "Comic Sans MS";
+    font-size: 14pt;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.usuarios{
+    font-family: Comic Sans MS;
+    font-size: 8pt;
+    width: 150px;
+    height: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.descipcion{
+    text-align: center;
+    width: 340px;
+    font-weight: bold;
+}
+
+.titulo-equipo{
+	font-family: "Comic Sans MS";
+	font-size: 12pt;
+	font-weight: bolder;
+	color: darkblue;
+	margin: auto;
+	text-align: center;
+}
+
+.titulo-present{
+	font-family: "Comic Sans MS";
+	font-size: 12pt;
+	font-weight: bolder;
+	color: darkblue;
+	margin: auto;
+	width: 100%;
+	text-align: left;
+    float: left;
+    text-align: center;
+}
+
+.titulo-present-productos{
+	font-family: "Comic Sans MS";
+	font-size: 12pt;
+	font-weight: bolder;
+	color: darkblue;
+	margin: auto;
+	width: 670px;
+	text-align: left;
+    float: left;
+}
+
+.titulo-present-eventos{
+    display: block;
+    font-family: "Comic Sans MS";
+    font-size: 12pt;
+    font-weight: bolder;
+    color: darkblue;
+    margin: auto;
+    width: 100%;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}
+
+.central{
+	padding-top: 130px;
+	vertical-align: middle;   
+}
+
+.contenido-equipo{
+    margin: auto; 
+    width: 80%;
+    padding-left: 120px;     
+}
+
+.contenido-equipo div{
+	font-family: "Comic Sans MS";
+	margin-left: auto;
+    margin-right: auto;
+	width: 150px;	
+	vertical-align:middle;    	
+}
+
+.pie-productos{
+	vertical-align: top;
+	width: 150px;
+	height: 124px;
+	margin: auto;
+    position: relative;
+    bottom: 30px;
+}
+
+.principal{
+    background-image: url('../images/web-final23.png');
+    background-repeat: no-repeat;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    padding: 30px;
+}
+
+.contenido-present{
+    background-image: url('../images/present/pieza-74.png');
+    background-repeat: no-repeat;
+    bottom: 40px;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    padding-top: 180px;
+    padding-left: 80px;
+}
+
+.contenido-video{
+    background-image: url('../images/video/pieza-65.png');
+    background-repeat: no-repeat;
+    width: 618px;
+    height: 350px;
+    margin: auto;
+    padding-top: 80px;
+    padding-left: 40px;   
+}
+
+.contenedor-present{
+    width: 300px;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.contenedor-video{
+    width: 300px;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.imagen-present{
+   width: 120px;
+   padding-left: 15px; 
+}
+
+.imagen-present-video{
+   width: 100px;
+   padding-left: 15px; 
+}
+
+.contenedor-centro div{
+    width: 120px;
+    margin: auto;
+}
+
+.nombre-present{
+    width: 120px;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+}
+
+.nombre-present-video{
+    width: 110px;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+}
+
+.contenedor-centro{
+    vertical-align: middle;
+    width: 240px;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 25px;
+}
+
+.contenedor-centro-video{
+    vertical-align: middle;
+    width: 240px;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.direccion{font-family: "Comic Sans MS"; color:darkgreen; }
+.comercial{font-family: "Comic Sans MS"; color:darkred; float: right;}
+.asesores{font-family: "Comic Sans MS"; color:darkblue;padding-left: 40px;}
+.administracion{font-family: "Comic Sans MS"; color:purple;}
+.especialistas{font-family: "Comic Sans MS";color:purple; float: right;}
+
+.contenedor-galeria{
+	background-image: url('../images/eventos/pieza-51.png');
+	background-repeat: no-repeat;   
+	width: 130px;
+	height: 137px;
+	padding: 10px;
+    z-index: 7; 
+}
+
+.contenedor-galeria img{
+    padding-top: 5px;
+    padding-left: 15px;
+    width: 84px;
+    height: 86px;
+    z-index: 0; 
+}
+
+.contenedor-galeria div{
+    font-family: "Comic Sans MS";
+    color: #000;
+    padding-left: 15px;
+    font-size: 9px;
+    font-weight: bold; 
+}
+
+.lista-galerias{
+    width: 100%;
+}
+
+.contenedor-navegacion{
+    position: relative;
+    top: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    z-index: 1000;	
+}
+
+.texto-navegacion{
+	font-family: "Comic Sans MS";
+	font-size: 9pt;
+	width: 85px;
+	text-align: center;
+}
+
+.titulo-noticias{
+	display: table-cell;
+    width: 50%;
+    font-family: "Comic Sans MS";
+	font-size: 15pt;
+	color: darkblue;
+}
+
+.titulo-tweets{
+    display: table-cell;
+	font-family: "Comic Sans MS";
+	width: 80%;
+	font-size: 15pt;
+	color:purple;
+}
+
+.titulo-evento{
+    display: table-cell;
+	font-family: "Comic Sans MS";
+	width: 50%;
+	font-size: 15pt;
+	color:lightblue;
+    text-align: center;
+}
+
+.titulo-evento div{
+	font-family: "Comic Sans MS";
+	width: 150px;
+	font-size: 15pt;
+	color:darkblue;
+	margin: auto; 
+}
+
+#galerias{
+	font-family: "Comic Sans MS";
+	width: 100%;
+	font-size: 12pt;
+	color:green;
+	text-align: center;	
+}
+
+#galerias div{	
+	width: 150px;
+	margin: auto;	
+}
+
+#social{
+    z-index: 10;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+#superior{
+    height: 47px;
+    width: 700px;
+    background-image: url('../images/barrasuperior.png');
+}
+
+.paises{
+    height: 10px;
+    border-collapse: collapse;
+    vertical-align: central;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.paises li{
+    list-style-type: none;
+    float: left;
+    border-collapse: collapse;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.paises li a{
+    color: white;
+    text-decoration: none;
+}
+
+#cont_paises{
+    float: right;
+    margin-top: 10px;
+}
+
+#pagina{       
+    margin-left: auto;
+    margin-right: auto;   
+    width: 1024px;
+    height: 100%; 
+}
+
+
+#pagina table{       
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#find{
+    position: relative;
+    height: 25px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+#busc{
+    position: relative;
+    top: -35px;
+    right: -25px;
+    float: right;
+    display: block;
+}
+
+.menu-inferior{
+    background-image: url('../images/inicio/pieza-27.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.texto-menu-inferior{
+    font-family: "Comic Sans MS";
+    font-size: 7pt;
+    text-align: center;
+    font-weight: bold;
+    width: 110px;
+}
+
+.imagen-menu-inferior{
+    padding-left: 25px;
+}
+
+#footer{
+    background-image: url('../images/inferior.png');
+    width: 945px;
+    height: 66px;
+}
+
+.tabla-inicio{
+    margin-top: 5%;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla-inicio td{
+    width: 171px;
+    height: 163px;
+    margin: auto;
+}
+
+.titulo-menu div{
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-weight: bold;
+    font-size: 10pt;
+    width: 150px;   
+}
+
+.contenido{
+    border-collapse: collapse;
+    padding: 0;
+}
+
+.contenido tr{
+    border-collapse: collapse;
+    padding: 0;
+}
+
+.contenido td{
+    border-collapse: collapse;
+    padding: 0;
+    vertical-align: top;
+}
+
+.encabezado{
+    border-collapse: collapse;
+    padding: 0;
+    background-color: white;
+    vertical-align: top;
+    width: 100%;
+}
+
+.encabezado td{
+    border-collapse: collapse;
+    padding: 0;
+    vertical-align: top;
+}
+
+#fondo-xyz{
+    background-image: url('../images/Menu-Inicial.png');
+    background-repeat: no-repeat;
+    height: 41px;
+}
+
+#fondo td{
+    height: 41px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.fondo-div{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 12px;
+    padding-left: 35px;
+}
+
+.form-ingreso{
+    float: right;
+    width: 750px;
+}
+
+#menu{        
+    width: 924px;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.textomenu{    
+    text-decoration: none;
+    width: 100%;
+    z-index:1;
+}
+
+.textomenu div{
+    text-align: center;
+    font-family: TodaySHOP-Ligth;
+    font-size: 11pt;
+}
+
+#bienvenida{
+    font-family:TodaySHOP-Bold;    
+    color: white;
+    font-size: 15pt;   
+    text-decoration: none;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+       
+}
+
+#cont-bienvenida{
+    background-image: url(../images/bienvenido.png);
+    height: 41px;
+    float:left;
+    width: 325px;
+}
+
+.opcion{height: 41px; float: left; z-index:3}
+.opcion div{margin-top: 12px;}
+
+#cont-inicio{width:119px;}
+#cont-nosotros{width:119px;}
+#cont-productos{width:119px;}
+#cont-eventos{width:119px;}
+#cont-contacto{width:119px;}
+
+#inicio{
+    font-family:TodaySHOP-Bold;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#nosotros{
+    font-family:"Comic Sans MS";
+    text-align: center;
+    margin-left: auto;    
+    margin-right: auto;    
+}
+
+#productos{
+    font-family:TodaySHOP-Bold;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#eventos{
+    font-family:TodaySHOP-Bold;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#elcontacto{  
+    font-family:TodaySHOP-Bold;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.fondo-galeria{
+    background-image: url(../images/picture.png);
+    width:330px;
+    height:160px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.fondo-galeria div{
+    margin:auto;
+}
+
+#foto{
+    background-image: url(../images/picture.png);
+    width: 320px;
+    height: 220px;
+}
+
+.ingreso{
+    float: right;
+    margin-right: 25px;
+}
+
+.ingreso td{
+    padding: 5px 5px 5px 5px;
+}
+
+.ingreso input{
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    font-size: 10px;
+    height:14px;
+    width: 150px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+#ingreso{
+    text-align: right;
+    font-family: "Comic Sans MS";
+    font-size: 10pt;
+    height: 10px;
+    color: #2C2E83;
+}
+
+#olvido{
+    text-align: center;
+    font-family: TodaySHOP-LightItalic;
+    font-size: 11.04pt;
+    color: #662382
+}
+
+.buscador{
+    background-color: white;
+    background-image: url('../images/fondoayuda.png');
+    width: 919px;
+    height: 240px;
+    background-repeat: no-repeat;
+    z-index:1;
+}
+
+.buscador input[type="text"]{
+    font-family: TodaySHOP-LightItalic;
+    font-size: 13px;
+    color: #9D9C9C;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    font-size: 14px;
+    outline: 0;
+    -webkit-appearance: none;
+    float: right;
+    width: 140px;
+    vertical-align: bottom;
+}
+
+.buscador input[type="image"]{
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+.contacto{
+    background-color: white;
+    background-image: url('../images/fondocontacto.png');
+    width: 923px;
+    height: 250px;
+    background-repeat: no-repeat;
+    z-index:1;
+}
+
+.contacto input[type="text"]{
+    font-family: TodaySHOP-LightItalic;
+    font-size: 13px;
+    color: #9D9C9C;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    font-size: 14px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    float: right;
+    width: 140px;
+    vertical-align: bottom;
+}
+
+.contacto input[type="image"]{
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+#contenedorbusq{
+    padding-left: 350px;
+    padding-top: 15px;
+}
+
+.minig{
+    font-family: TodaySHOP-LightItalic;
+    color: #9D9C9C;
+    border: 1px solid #ccc;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    padding-left: 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    float: right;
+    height: 20px;
+}
+
+#contenedorbanner{
+    float:right;
+}
+
+#textocontacto{
+    margin-top: 70px;
+    margin-right: 60px;
+}
+
+#divbusca{
+    padding-left: 10px;
+}
+
+.titulocontacto{
+    font-family: TodaySHOP-Bold;
+    text-align: right;
+    color:#36A9E0;
+    font-size: 27px;
+}
+
+.datoscontacto{
+    font-family: TodaySHOP-Light;
+    text-align: right;
+    font-size: 15px;
+}
+
+.fincontacto{
+    font-family: TodaySHOP-Regular;
+    text-align: center;
+    font-size: 20px;
+}
+
+#galeria{
+    background-color: white;
+    z-index: 3;
+    
+    width: 540px;
+    height: 225px;
+    border-radius: 15px;
+    
+}
+
+#galeria div{
+    float: right;
+    margin-right: 22px;
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+    width: 200px;
+    padding-right: 20px;
+}
+
+#contmensaje{
+    padding-left: 20px;
+}
+
+#nube{
+  vertical-align: top;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  width: 120px;   
+}
+
+#ayudante{
+    padding-top: 65px;
+}
+
+.titulo{
+    font-family: TodaySHOP-Medium;
+    font-size: 16pt;
+    text-align: left;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    color: #00396F;
+    list-style-image: url('../images/marcador2.png');
+}
+
+.titulo li:after{
+    text-align: center;
+    padding-left: 5px;
+    content: url(../images/marcador2-1.png);
+}
+
+.titulo-nosotros{
+    font-family: TodaySHOP-Medium;
+    font-size: 11pt;
+    text-align: left;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    color: #f3b824;
+    list-style-image: url('../images/marcador4.png');
+}
+
+.titulo-nosotros li:after{
+    text-align: center;
+    padding-left: 5px;
+    content: url(../images/marcador4-1.png);
+}
+
+.titulo-nosotros-pri{
+    font-family: TodaySHOP-Medium;
+    font-size: 16pt;
+    text-align: left;
+    margin: 0;
+    margin-left: 30px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #009fe3;
+    list-style-image: url('../images/marcador5.png');
+}
+
+.titulo-nosotros-pri li:after{
+    text-align: center;
+    padding-left: 5px;
+    content: url(../images/marcador5-1.png);
+}
+
+.titulo-eventos{
+    font-family: TodaySHOP-Medium;
+    font-size: 16pt;
+    text-align: left;
+    margin: 0;
+    margin-left: 30px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #1470b8;
+    list-style-image: url('../images/marcador6.png');
+}
+
+.titulo-eventos li:after{
+    text-align: center;
+    padding-left: 5px;
+    content: url(../images/marcador6-1.png);
+}
+
+.titulo-productos{
+    font-family: TodaySHOP-Medium;
+    font-size: 16pt;
+    text-align: left;
+    margin: 0;
+    margin-left: 30px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #FFF;
+    list-style-image: url('../images/marcador5.png');
+}
+
+.titulo-productos li:after{
+    text-align: center;
+    padding-left: 5px;
+    content: url(../images/marcador5-1.png);
+}
+
+.titulo-fichas{
+    font-family: "Comic Sans MS";
+    font-size: 10pt;
+    text-align: left;
+    padding: 0;
+    font-weight: bold;
+}
+
+.titulo-fichas div{
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.titulo-fichas span{
+    color: green;
+}
+
+.contenedor-fichas{
+    width: 875px;
+    height: 280px;
+    min-height: 280px;
+    max-height: 280px;
+    min-width: 875px;
+    max-width: 875px;    
+    overflow-y: scroll;
+    text-align: justify;
+    resize: none;
+}
+
+.contenedor-fichas div{
+    width: 80%;
+    margin: auto;
+}
+
+#textequipo{
+    font-family: TodaySHOP-Light;
+    font-size: 12pt;
+    text-align: justify;
+    width: 320px;
+}
+
+.separar{
+    width: 560px;
+}
+
+#areas{
+    color: #FFFFFF;
+    background-color: white;
+    border: 1px solid #ccc;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    float: left;
+    width: 480px;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
+    height: 150px;
+}
+
+.categorias{
+    font-family: TodaySHOP-Regular;
+    font-size: 10pt;
+    width: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #28225C;
+    padding-left: 5px;
+    text-decoration: none;
+    border: 0;
+}
+
+.icon{
+    border: 0;
+}
+
+.contenedor-noticias{
+    display: block;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#noticias{
+    display: table-cell;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    padding: 4px 7px;
+    outline: 0;
+    float: left;
+    width: 380px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+#noticias2{
+    color: #FFFFFF;
+    background-color: white;
+    border: 1px solid #ccc;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    float: left;
+    width: 480px;
+    margin: auto 10px auto 10px;
+    padding: 5px 15px 5px 15px;
+    height: 50px;
+}
+
+#twet_estat{
+    height: 50px;
+}
+
+#twet_estat td{
+    border-right: 1px;
+    border-right-color: grey;
+    border-right-style: solid;
+}
+
+#twet_estat td:last-child{
+    padding-left: 10px;
+    border-right: none;
+}
+
+#nomtwetter{
+    font-family: arial;
+    font-size: 13pt;
+    color: #3C3C3B;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: central;
+    font-weight: bold;
+    width: 200px;
+}
+
+.estad{
+    font-family: arial;
+    font-size: 11pt;
+    font-weight: bold;
+    color:#3C3C3B;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.sub_tweet{
+    font-family: arial;
+    font-size: 7pt;
+    color:#878787;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tweet{
+    font-family: arial;
+    color: black;
+    font-size: 10pt;
+}
+
+.tweet span{
+    color:#878787;
+}
+
+#mensaje{
+    font-family: TodaySHOP-Regular;
+    font-size: 15px;
+    width: 570px;
+    text-align: center;
+    line-height: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+#obligatorio{
+    font-family: TodaySHOP-Light;
+    font-size: 15px;
+    float: right;
+    line-height: 5%;
+    margin-right: 250px;
+    color: #575756;
+}
+
+.formcontacto{
+    position: relative;
+    left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 20px 20px;
+    height: 430px;
+    min-height: 430px;
+    max-height: 430px;
+}
+
+.titcontacto{
+    font-family: "Comic Sans MS";
+    font-size: 10pt;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.location{
+    font-family: "Comic Sans MS";
+    font-size: 10pt;
+    text-align: center;
+}
+
+
+#cuerpo{
+    min-height: 72%;
+    display: table;
+}
+
+#pie-pagina{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
+}
+
+
+#cuerpo > div{
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1020px;    
+}
+
+.direccion-pie{
+    margin-left: auto;
+    margin-right: auto;
+    width: 340px;
+}
+
+#textomensaje{
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    background-color: transparent;
+    background-image: url('../images/contacto/pieza-39.png');
+    width: 420px;
+    height: 170px;
+    resize: none;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 45px;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.tit-contacto{
+    font-family: "Comic Sans MS";
+    font-size: 22px;
+    color: darkblue;
+    font-weight: bolder;
+    padding-left: 30px;
+}
+
+#enviacorreo{
+    font-family: "Comic Sans MS";
+    color: darkgreen;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    width: 100px;
+}
+
+#borracorreo{
+    font-family: "Comic Sans MS";
+    color: lightblue;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    width: 100px;
+}
+
+.envio-contacto{
+    position: relative;
+    bottom: 25px;
+    width: 280px;
+    margin: auto;
+    padding-left: 50px;
+}
+
+
+.campocorreo{
+    width: 300px;
+}
+
+#mensaje-contenido{
+    text-align: justify;
+    font-size: 8pt;
+    width: 350px;
+    height: 50px;
+    resize: none;
+}
+
+.lctito{
+    width: 320px;
+}
+
+.sociales{
+    position: relative;
+    bottom: 50px;
+    vertical-align: middle;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+
+.sociales div{
+    font-family: "Comic Sans MS";
+    color: gray;
+}
+
+.inputcontacto{
+    font-family: "Comic Sans MS";
+    font-size: 11px;
+    font-weight: bolder;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    padding: 4px 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    outline: 0;
+    -webkit-appearance: none;
+    float: left;
+    width: 120px;
+    vertical-align: bottom;   
+}
+
+.inputcontacto-largo{
+    font-family: "Comic Sans MS";
+    font-size: 11px;
+    font-weight: bolder;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    padding: 4px 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    outline: 0;
+    -webkit-appearance: none;
+    float: left;
+    width: 340px;
+    vertical-align: bottom;   
+}
+
+.crm_options{
+    width: 100%;
+    height: 25px;   
+    padding-top: 15px;
+}
+
+.crm_options ul{
+    padding: 0px;
+    margin: 0px;    
+}
+
+.crm_options li{
+    float: left;
+    list-style-type: none;
+    border-collapse: collapse;
+    width: 160px;
+}
+
+.crm_options li:after{
+    content: "|";
+    color: black;
+    padding-left: 20px;
+}
+
+.crm_options li:last-child:after {
+    content: "";
+}
+
+.crm_options a{
+    font-family: "Comic Sans MS";
+    font-size: 12px;    
+    color:black;
+    text-decoration: none;    
+}
+
+.nosotros{
+    margin-left: 50px;
+    width: 100%;
+    height: 430px;
+    max-height: 430px;
+    min-height: 430px;
+}
+
+.fondo-eventos{
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 430px;
+    max-height: 430px;
+    min-height: 430px;
+}
+
+.fondo-eventos table{
+    margin-left: 5%;
+}
+
+.fondo-productos{
+    width: 920px;
+    height: 430px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.info{
+    background-color: #f6f6f6;
+}
+
+.info-nosotros-contenedor{
+    margin: 15px;
+}
+
+.info-nosotros-titulo{
+    background-color: #f6f6f6;   
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    padding-top: 15px;
+    
+}
+
+.info-nosotros{
+    font-family: TodaySHOP-Regular;
+    font-size: 11pt;
+    background-color: #f6f6f6;
+    width: 250px;
+    height: 180px;
+    text-align: justify;
+    padding: 10px;
+    color: gray;
+    
+}
+
+.texto-evento{
+    font-family: TodaySHOP-Regular;
+    font-size: 11pt;
+    width: 390px;   
+    text-align: justify;
+    padding: 15px;
+    color: gray;
+    
+}
+
+.centro{
+    font-family: TodaySHOP-Bold;
+    font-size: 13pt;
+    width: 390px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+}
+
+#historia{
+    overflow-y: scroll;
+    font-family: TodaySHOP-Regular;
+    font-size: 11pt;
+    color:gray;
+    text-align: justify;
+    resize: none;
+    width: 350px;
+    height: 550px;
+    border: none;
+}
+
+#historia-evento{
+    overflow-y: scroll;
+    font-family: TodaySHOP-Regular;
+    font-size: 11pt;
+    color:gray;
+    text-align: justify;
+    resize: none;
+    width: 450px;
+    height: 437px;
+    border: none;
+    margin-bottom: 133px;      
+}
+
+.anio{
+    width: 50px;   
+    font-family: TodaySHOP-Bold;
+    font-size:15pt;
+    text-decoration: underline;
+    display: table-cell;   
+}
+
+.hist-texto{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#nosotros-imagen{
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+#eventos-imagen{
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.back-eventos{
+    float: right;
+    padding-right: 50px;
+    width: 360px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-image: url('../images/eventos/pieza-57.png');
+    z-index:999;
+    overflow: hidden;
+    padding-top: 45px;
+    padding-left: 5px;    
+}
+
+.boton-seguir{
+    display: table-cell;
+    width: 25%;    
+    
+}
+
+.front-eventos{
+    position: absolute;
+    top: 310px;
+    left: 660px;
+    z-index: 0;
+}
+
+.galeria-eventos{
+	padding: 10px;
+	padding-bottom:5px;
+}
+
+.galeria-eventos-sec{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;	
+	
+}
+
+.galeria-eventos-sec:hover{
+	cursor: pointer;		
+}
+
+#principal-eventos{
+	width: 410px;
+	height: 275px;
+}
+
+.secundaria-eventos{
+	width: 135px;
+	height: 90px;
+}
+
+#tbclientes{
+	font-family: TodaySHOP-XUltra;
+	font-size: 9pt;
+	min-width: 924px;
+	max-width: 924px;
+}
+
+#contenedor_crm{
+	padding: 20px;
+	padding-bottom: 50px;
+	width: 100%;
+    height: 550px;
+    max-height: 550px;
+    min-height: 550px;
+}
+
+#observ{
+    text-align: justify;
+    font-size: 8pt;
+    width: 350px;
+    height: 50px;
+    resize: none;
+    
+}
+
+.ordenes thead th{
+	background-color:#6ea7bb;
+	color: white;
+	font-size:12px;
+	padding: 2px; 
+}
+
+.ordenes tbody td{
+	font-size:12px;
+	padding: 2px; 
+}
+
+#agregar{ width: 670px;}
+#agregar input{float: right;}
+
+#fagenda{
+    width: 225px;
+}
+
+.tabla-areas{
+    margin-left: 380px;
+    margin-top: 95px;
+}
+
+.tabla-areas td{
+    width: 58px;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.tabla-areas div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla-areas a{
+    font-size: 7pt;
+    text-decoration: none;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    float: inside;
+}
+
+.contenedor-productos{
+    background-color: #FFF;
+    background-image: url('../images/productos/PNG Productos-09.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 4px solid;
+    border-color: #4d8c3f;
+    width: 650px;
+    height: 410px;
+    padding: 15px;
+    margin: auto;
+}
+
+.foto-medium{
+    background-color: white;
+    border: 1px solid;
+    border-color: lightgray;
+    width: 400px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.foto-medium img{
+    margin: auto;
+    padding-left: 70px;
+}
+
+.foto-small{
+    background-color: white;
+    border: 1px solid;
+    border-color: lightgray;
+    width: 395px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#grupo-productos{
+    padding-left: 50px;
+}
+
+#grupo-productos div:hover{
+    cursor: pointer;
+}
+
+#store{
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    width: 100%;
+    height: 420px;
+}
+
+#close-store{
+    float: right;
+}
+
+#titulo-producto{
+    text-align: center;
+    font-family: TodaySHOP-Bold;
+}
+
+#descripcion-producto{
+    text-align: justify;
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+}
+
+.tit-producto{
+    border:  1px solid;
+    border-radius: 5px;
+    border-color:  lightgray;
+    width: 115px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10pt;
+}
+
+#areas-producto li{
+    font-size: 10pt;
+}
+
+#presentacion-producto{
+    font-size: 10pt;
+    text-align: center;    
+}
+
+#ficha-producto{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#contenedor-clinica{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 80px;
+    bottom: 80px;
+}
+
+.filtro{
+    border-collapse: collapse;
+    padding: 0;
+}
+
+.filtro tr{
+    border-collapse: collapse;
+    padding: 0;
+}
+
+.filtro td{
+    border-collapse: collapse;
+    padding: 0;
+    vertical-align: top;
+    height: 25px;
+}
+
+.filtro label{
+    font-size: 10pt;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.filtro select{
+    width: 150px;
+    height: 20px;
+}
+
+#send:hover{
+    cursor: pointer;
+}
+
+#send2:hover{
+    cursor: pointer;
+}
+
+#send3:hover{
+    cursor: pointer;
+}
+
+#contenido-lista li{
+    list-style-image: url('../images/pdf.gif');
+    height: 35px;
+    margin-left: 2px;   
+}
+
+#contenido-lista div{
+    font-family: "Comic Sans MS";
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    width: 450px;
+    vertical-align: top;    
+}
+
+#contenido-lista a{
+    font-family: "Comic Sans MS";
+    font-size: 12px;
+    color: #5d83bd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bt-nav{
+    margin-top: 35px;
+    width: 100px;
+}
+
+.logo-marca{
+    width: 100%;
+}
+
+.logo-marca div{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-marca-2{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.logo-marca-2 div{
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#anterior:hover{
+    cursor: pointer;
+}
+
+#siguiente:hover{
+    cursor: pointer;
+}
+
+.filtro-crm{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.cabeza{
+    height: 10%;
+}
+
+.cabeza-opciones{
+    height:  5%;
+}
+
+.cuerpo{
+    height: 430px;   
+}
+
+.pie{
+    height: 10%;
+}
+
+.direcciones{
+    position: relative;
+    bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.direcciones div{
+    font-family: Comic Sans MS;
+    font-size: 14px;
+    text-align: center;
+    width: 270px;
+}
+
+.titulo-galerias{
+    display: table;
+    width: 100%;
+}
+
+.titulo-galerias-2{
+    display: table;
+    width: 50%;    
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<tipificacion><contacto id="1" nombre="Llamada"><efectividad id="9" nombre="Programaci&#xF3;n"/><efectividad id="10" nombre="Confirmaci&#xF3;n"/></contacto><contacto id="2" nombre="Visita"><efectividad id="20" nombre="Presentaci&#xF3;n Portafolio"/><efectividad id="21" nombre="Entrega de Muestras"/><efectividad id="22" nombre="Negociaci&#xF3;n"/><efectividad id="23" nombre="Seguimiento"/><efectividad id="24" nombre="Visita con Especialista"/><efectividad id="25" nombre="Cotizaci&#xF3;n"/><efectividad id="27" nombre="Otros"/></contacto></tipificacion>
